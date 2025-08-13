@@ -6,7 +6,7 @@ export const slidesData = [
     content: {
       title: "Augment Code & Claude Code",
       subtitle: "Two AI Coding Assistants Compared",
-      description: "What they actually do and how much they cost",
+      description: "",
       footer: "",
     },
   },
