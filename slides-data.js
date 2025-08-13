@@ -11,33 +11,116 @@ export const slidesData = [
     },
   },
   {
-    id: "what-they-are",
+    id: "the-problem",
     layout: "default",
     content: {
-      title: "What They Actually Are",
+      title: "The Problem: Limited Context in AI Agents",
       sections: [
         {
-          title: "Augment Code:",
+          title: "Traditional AI Coding Assistants Struggle With:",
           items: [
-            "$50-250/month (based on usage)",
-            "VS Code/JetBrains/Cursor integration",
-            "Context Engine indexes your codebase",
-            "600-4500 messages/month depending on tier",
-            "SOC 2 Type II compliant",
-            "Enterprise tier with SSO/SCIM",
-            "Uses GPT-4o, Claude 3.5, Gemini models",
+            "Understanding large codebases (>1000 files)",
+            "Maintaining context across multiple files",
+            "Finding relevant code patterns and dependencies",
+            "Making changes that don't break existing functionality",
+            "Understanding project-specific conventions and architecture",
           ],
         },
         {
-          title: "Claude Code:",
+          title: "The Result:",
           items: [
-            "Part of Claude Pro ($20/month)",
-            "Terminal-based CLI tool",
-            "Grep-like codebase search",
-            "Custom agents via markdown files",
-            "Uses Claude 3.5 Sonnet or Opus",
-            "Direct file editing and command execution",
-            "Works with MCP (Model Context Protocol)",
+            "Generic suggestions that don't fit your codebase",
+            "Breaking changes due to missing context",
+            "Repetitive explanations of your project structure",
+            "Time wasted on manual context gathering",
+            "Inability to handle complex, multi-file refactors",
+          ],
+        },
+        {
+          title: "What We Need:",
+          items: [
+            "Deep understanding of entire codebase",
+            "Persistent memory of project patterns",
+            "Ability to make coordinated changes across files",
+            "Context-aware suggestions and refactoring",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "how-they-solve-it",
+    layout: "default",
+    content: {
+      title: "How Each Tool Solves the Context Problem",
+      sections: [
+        {
+          title: "Augment Code's Approach:",
+          items: [
+            "Context Engine: Real-time indexing of entire codebase",
+            "Semantic understanding: Maps relationships between files/functions",
+            "Persistent sessions: Remembers previous conversations and decisions",
+            "IDE integration: Works within your existing development environment",
+            "Multi-file awareness: Can coordinate changes across dozens of files",
+            "Project patterns: Learns your team's coding conventions over time",
+          ],
+        },
+        {
+          title: "Claude Code's Approach:",
+          items: [
+            "Direct file access: Can read/write any file in your project",
+            "Command execution: Runs tests, builds, and debugging tools",
+            "Git integration: Understands version history and branch context",
+            "Terminal-native: Works with your existing CLI workflow",
+            "Custom agents: Specialized contexts for different types of tasks",
+            "MCP integration: Extensible with custom tools and data sources",
+          ],
+        },
+        {
+          title: "Both Tools Address:",
+          items: [
+            "Large codebase navigation and understanding",
+            "Context-aware code generation and refactoring",
+            "Reduced need for manual context explanation",
+            "Ability to handle complex, multi-step development tasks",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: "what-they-are",
+    layout: "default",
+    content: {
+      title: "Two Different Context Solutions",
+      sections: [
+        {
+          title: "Augment Code: The Context Engine Approach",
+          items: [
+            "Real-time codebase indexing → Always knows your entire project",
+            "IDE integration → Context within your development workflow",
+            "Persistent sessions → Remembers past conversations and decisions",
+            "Multi-model support (GPT-4o, Claude 3.5, Gemini) → Best AI for each task",
+            "Enterprise security (SOC 2) → Safe for production codebases",
+            "Usage-based pricing ($50-250/month) → Scales with team size",
+          ],
+        },
+        {
+          title: "Claude Code: The Direct Access Approach",
+          items: [
+            "Terminal-native → Works with existing CLI workflows",
+            "Direct file manipulation → No abstraction layer between AI and code",
+            "Command execution → Can run tests, builds, and debugging tools",
+            "Custom agents → Specialized contexts for different problem types",
+            "MCP integration → Extensible with custom tools and data sources",
+            "Claude Pro included ($20/month) → Lower barrier to entry",
+          ],
+        },
+        {
+          title: "Key Difference:",
+          items: [
+            "Augment: Builds comprehensive context upfront, works within IDE",
+            "Claude: Gathers context on-demand, works directly with files/commands",
           ],
         },
       ],
