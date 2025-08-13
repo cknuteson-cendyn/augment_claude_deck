@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+    
+    <!-- Print/PDF styles -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 
+            'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/print/pdf.min.css' : 
+            'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/print/paper.min.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>

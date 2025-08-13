@@ -27,8 +27,11 @@
 .reveal .slides section {
     text-align: left;
     padding: 20px;
+    padding-bottom: 80px; /* Extra bottom padding for scrollable content */
     max-height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .reveal .slides section.center {
@@ -45,6 +48,7 @@
     border-radius: 10px;
     padding: clamp(10px, 2vw, 20px);
     margin: 15px 0;
+    margin-bottom: 20px; /* Extra bottom margin for last items */
     font-size: 0.9em;
 }
 
@@ -235,4 +239,72 @@
 
 .animate-in {
     animation: fadeIn 0.5s ease-out;
+}
+
+/* Overflow handling */
+.reveal .slides section.has-overflow {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 212, 255, 0.5) rgba(255, 255, 255, 0.1);
+}
+
+.reveal .slides section.has-overflow::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reveal .slides section.has-overflow::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.reveal .slides section.has-overflow::-webkit-scrollbar-thumb {
+    background: rgba(0, 212, 255, 0.5);
+    border-radius: 4px;
+}
+
+.reveal .slides section.has-overflow::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 212, 255, 0.7);
+}
+
+/* Print styles for PDF export */
+@media print {
+    .pdf-export-button {
+        display: none !important;
+    }
+}
+
+/* Slide footer */
+.slide-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 212, 255, 0.3);
+    text-align: center;
+}
+
+.slide-footer p {
+    font-size: 1.1em;
+    color: #00D4FF;
+    font-style: italic;
+}
+
+/* Hidden PDF export button */
+.pdf-export-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background: rgba(0, 166, 251, 0.2);
+    border: 1px solid #00A6FB;
+    border-radius: 5px;
+    color: #00D4FF;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.pdf-export-button:hover {
+    opacity: 1;
+    background: rgba(0, 166, 251, 0.4);
 }

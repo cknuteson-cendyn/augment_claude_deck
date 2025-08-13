@@ -7,7 +7,11 @@
       "mcp__playwright__browser_take_screenshot",
       "WebFetch(domain:docs.anthropic.com)",
       "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "mcp__playwright__browser_evaluate",
+      "Bash(grep:*)",
+      "mcp__playwright__browser_snapshot",
+      "WebFetch(domain:www.augmentcode.com)"
     ],
     "deny": []
   }

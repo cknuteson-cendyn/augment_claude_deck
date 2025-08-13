@@ -67,6 +67,12 @@ export class SlideBuilder {
             html += `<strong>${content.callout}</strong></p>`;
         }
         
+        if (content.footer) {
+            html += `<div class="slide-footer fragment">`;
+            html += `<p>${content.footer}</p>`;
+            html += `</div>`;
+        }
+        
         html += `</section>`;
         return html;
     }
