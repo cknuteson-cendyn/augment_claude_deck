@@ -50,9 +50,15 @@ export const slidesData = [
       title: "Augment Code Demo",
       subtitle: "AI-Powered Development That Actually Ships",
       terminal: [
-        { type: "comment", text: "// Real scenario: Friday 5pm, complex refactor needed" },
+        {
+          type: "comment",
+          text: "// Real scenario: Friday 5pm, complex refactor needed",
+        },
         { type: "prompt", text: "$ augment" },
-        { type: "command", text: "@augment refactor our authentication to OAuth2 with refresh tokens" },
+        {
+          type: "command",
+          text: "@augment refactor our authentication to OAuth2 with refresh tokens",
+        },
         { type: "output", text: "Analyzing 12,000+ files in codebase..." },
         { type: "output", text: "Found 47 files requiring changes" },
         { type: "output", text: "Refactoring authentication flow..." },
@@ -88,19 +94,37 @@ export const slidesData = [
       title: "Claude Code Demo",
       subtitle: "Real-time problem solving in your terminal",
       terminal: [
-        { type: "comment", text: "// Production is down - Redis connection issues" },
-        { type: "prompt", text: '$ claude "debug redis connection issues in production logs"' },
+        {
+          type: "comment",
+          text: "// Production is down - Redis connection issues",
+        },
+        {
+          type: "prompt",
+          text: '$ claude "debug redis connection issues in production logs"',
+        },
         { type: "output", text: "Analyzing logs/production.log..." },
-        { type: "output", text: "Found: Connection pool exhausted at 18:42 UTC" },
+        {
+          type: "output",
+          text: "Found: Connection pool exhausted at 18:42 UTC",
+        },
         { type: "output", text: "Creating fix in config/redis.yml..." },
         { type: "output", text: "Increased pool size from 5 to 25" },
         { type: "output", text: "Writing connection pool tests..." },
         { type: "output", text: "Updated package.json with monitoring script" },
         { type: "prompt", text: "$ npm test" },
         { type: "success", text: "All tests passing (42 tests, 0.8s)" },
-        { type: "prompt", text: "$ git commit -m 'Fix Redis connection pool exhaustion'" },
-        { type: "success", text: "[main abc123] Fix Redis connection pool exhaustion" },
-        { type: "success", text: "3 files changed, 47 insertions(+), 2 deletions(-)" },
+        {
+          type: "prompt",
+          text: "$ git commit -m 'Fix Redis connection pool exhaustion'",
+        },
+        {
+          type: "success",
+          text: "[main abc123] Fix Redis connection pool exhaustion",
+        },
+        {
+          type: "success",
+          text: "3 files changed, 47 insertions(+), 2 deletions(-)",
+        },
       ],
       highlights: [
         "Instant production debugging",
@@ -140,12 +164,16 @@ export const slidesData = [
       table: {
         headers: ["Task", "Tool", "Why"],
         rows: [
-          ["Large codebase refactoring", "Augment", "Context Engine indexes entire codebase"],
+          [
+            "Large codebase refactoring",
+            "Augment",
+            "Context Engine indexes entire codebase",
+          ],
           ["Quick terminal tasks", "Claude Code", "Direct CLI access"],
           ["IDE-based development", "Augment", "VS Code/JetBrains plugins"],
-          ["Custom automation scripts", "Claude Code", "Scriptable with MCP"],
-          ["Enterprise compliance", "Augment", "SOC 2 Type II certified"],
-          ["Learning/experimenting", "Both", "Free tiers available"],
+          ["Custom automation scripts", "Claude Code", "Scriptable Hooks"],
+          ["MCP and Tools", "Both", "Augments UI is better"],
+          ["Learning/experimenting", "Both", "Just try it out"],
         ],
       },
     },
@@ -163,14 +191,14 @@ export const slidesData = [
             "Working with large, complex codebases",
             "You want persistent context across sessions",
             "Enterprise security requirements (SOC 2)",
-            "Team collaboration features needed",
+            "You like 'remote' agents to cook while you afk",
           ],
         },
         {
           title: "Use Claude Code When:",
           items: [
             "You prefer terminal/CLI workflows",
-            "Quick one-off tasks and debugging",
+            "Hands-off tasking and debugging",
             "You want direct LLM access without abstraction",
             "Building custom automation scripts",
             "You're already a Claude Pro subscriber",
@@ -261,7 +289,7 @@ export const slidesData = [
     class: "title-slide",
     content: {
       title: "Questions?",
-      subtitle: "Let's discuss how these tools can help your team",
+      subtitle: "",
       description: "",
       footer: "",
     },
