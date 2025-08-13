@@ -120,7 +120,7 @@ class PresentationApp {
         // Create hidden button for PDF export
         const button = document.createElement('button');
         button.className = 'pdf-export-button';
-        button.innerHTML = '📄 Export PDF';
+        button.innerHTML = 'Export PDF';
         button.title = 'Export presentation to PDF (or press Cmd+Shift+P)';
         
         button.addEventListener('click', () => this.exportToPDF());
